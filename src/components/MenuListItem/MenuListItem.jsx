@@ -1,11 +1,14 @@
 import './MenuListItem.scss';
 
-function MenuListItem( {icon, title }) {
+import { ReactComponent as ChevronRight } from "../../assets/icons/chevron-right.svg";
+
+
+function MenuListItem( {icon, title} ) {
     return (
         <section className="menu-item">
-            <div>{icon}</div>
-            <h2>{title}</h2>
-            <div></div>
+            {icon}
+            <h2 className="menu-item__title">{title}</h2>
+            <ChevronRight />
         </section>
     );
 }

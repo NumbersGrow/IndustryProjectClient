@@ -1,0 +1,15 @@
+@use "../../styles/_mixins" as *;
+@use "../../styles/_variables" as *;
+
+.menu-item {
+    @include flex(space-between, center);
+
+    border-bottom: solid 1px $border-light;
+    padding: 0.5rem;
+
+    &__title {
+        flex-grow: 1;
+        font-size: .875rem;
+        padding-left: 0.5rem;
+    }
+}
