@@ -1,10 +1,10 @@
 import './MenuListItem.scss';
 
-function MenuListItem() {
+function MenuListItem( {icon, title }) {
     return (
         <section className="menu-item">
-            <div></div>
-            <h2></h2>
+            <div>{icon}</div>
+            <h2>{title}</h2>
             <div></div>
         </section>
     );
