@@ -1,0 +1,57 @@
+@use "./styles/fonts";
+@use "./styles/mixins" as *;
+@use "./styles/variables" as *;
+
+// border-sizing reset
+* {
+  box-sizing: border-box;
+}
+
+// Margin resets
+body {
+  margin: 0;
+  font-family: 'Helvetica Neue', 'Segoe UI', Arial, sans-serif;
+  font-weight: normal;
+  color: $text-primary-dark;
+}
+
+figure,
+h1,
+h2,
+h3,
+h4,
+h5,
+p {
+  margin-block-start: 0;
+  margin-block-end: 0;
+  margin-inline-start: 0;
+  margin-inline-end: 0;
+}
+
+// Body margins and layout
+.container {
+  @include tablet {
+    @include flex(space-between, flex-start);
+  }
+}
+main {
+  margin: 1rem;
+
+  @include tablet {
+    margin: 1.25rem 1rem 1.25rem .5rem;
+    width: 74%;
+  }
+}
+
+aside {
+  margin: 1rem;
+
+  @include tablet {
+    margin: 1.75rem .5rem 1.75rem 1rem;
+    width: 24%;
+  }
+}
+
+.hidden {
+  display: none;
+}
