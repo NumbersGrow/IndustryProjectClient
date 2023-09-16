@@ -1,4 +1,3 @@
-@use "./styles/fonts";
 @use "./styles/mixins" as *;
 @use "./styles/variables" as *;
 
@@ -29,26 +28,11 @@ p {
 }
 
 // Body margins and layout
-.container {
-  @include tablet {
-    @include flex(space-between, flex-start);
-  }
-}
 main {
   margin: 1rem;
 
   @include tablet {
-    margin: 1.25rem 1rem 1.25rem .5rem;
-    width: 74%;
-  }
-}
-
-aside {
-  margin: 1rem;
-
-  @include tablet {
-    margin: 1.75rem .5rem 1.75rem 1rem;
-    width: 24%;
+    margin: 1.25rem;
   }
 }
 
