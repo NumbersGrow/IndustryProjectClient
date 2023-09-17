@@ -1,6 +1,6 @@
-import './Cashier.scss';
+import './Profile.scss';
 
-function Cashier() {
+function Profile() {
     return (
         <section className="cashier">
             <h2 className="cashier__name">Name I</h2>
@@ -10,4 +10,4 @@ function Cashier() {
     )
 }
 
-export default Cashier;
+export default Profile;

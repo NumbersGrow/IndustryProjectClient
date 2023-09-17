@@ -1,13 +1,15 @@
-import Cashier from "../../components/Cashier/Cashier";
-import CashierMenu from "../../components/CashierMenu/CashierMenu";
-import CashierCategories from "../../components/CashierCategories/CashierCategories";
+import Profile from "../../components/Cashier/Profile/Profile";
+import Menu from "../../components/Cashier/Menu/Menu";
+import Categories from "../../components/Cashier/Categories/Categories";
+import CategoryGallery from "../../components/Cashier/CategoryGallery/CategoryGallery";
 
 function CashierPage() {
     return (
         <div className="cashier-page">
-            <Cashier />
-            <CashierMenu />
-            <CashierCategories />
+            <Profile />
+            <Menu />
+            <Categories />
+            <CategoryGallery />
         </div>
     )
 }

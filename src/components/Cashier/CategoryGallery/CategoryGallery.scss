@@ -1,0 +1,25 @@
+@use "../../../styles/mixins" as *;
+@use "../../../styles/variables" as *;
+
+.category-gallery {
+    border: solid 1px $border-dark;
+    border-radius: 1rem;
+    margin: 0.5rem;
+    padding: 2rem;
+    width: 100%;
+
+    &__container {
+        @include flex;
+    }
+
+    &__products {
+        @include flex;
+
+        flex-grow: 1;
+        flex-wrap: wrap;
+    }
+
+    &__next {
+        align-self: flex-end;
+    }
+}

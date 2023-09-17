@@ -1,6 +1,6 @@
-import './CashierCategories.scss';
+import './Categories.scss';
 
-function CashierCategories() {
+function Categories() {
     return (
         <section className="categories">
             <h2 className="categories__title">Categories</h2>
@@ -50,4 +50,4 @@ function CashierCategories() {
     )
 }
 
-export default CashierCategories;
+export default Categories;

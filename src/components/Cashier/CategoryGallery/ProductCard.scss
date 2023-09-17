@@ -1,0 +1,47 @@
+@use "../../../styles/mixins" as *;
+@use "../../../styles/variables" as *;
+
+.product {
+    @include flex;
+
+    border: solid 1px $border-dark;
+    border-radius: 1rem;
+    flex-direction: column;
+    margin: 1rem 1rem 0 0;
+    padding: .5rem;
+    width: 30%;
+
+    &__pic {
+        border: solid 1px $border-dark;
+        border-radius: 1rem;    
+        width: 100%;
+    }
+
+    &__name {
+        font-size: 1rem;
+        padding: 0.25rem 0;
+    }
+
+    &__description {
+        font-size: .875rem;
+    }
+
+    &__counter {
+        @include flex;
+        align-self: flex-end;
+        margin-top: 0.5rem;
+    }
+
+    &__counter-reduce, &__counter-increase {
+        @include flex(center, center);
+
+        border: solid 1px $border-dark;
+        border-radius: 50%;
+        width: 1.25rem;
+        height: 1.25rem;
+    }
+
+    &__counter-quantity {
+        margin: 0 0.25rem;
+    }
+}

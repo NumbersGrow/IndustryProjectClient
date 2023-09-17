@@ -1,6 +1,6 @@
-import './CashierMenu.scss';
+import './Menu.scss';
 
-function CashierMenu() {
+function Menu() {
     return (
         <section className="menu">
             <div className="menu__item">
@@ -32,4 +32,4 @@ function CashierMenu() {
     )
 }
 
-export default CashierMenu;
+export default Menu;
