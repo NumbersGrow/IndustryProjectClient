@@ -1,0 +1,39 @@
+@use "../../styles/mixins" as *;
+@use "../../styles/variables" as *;
+
+.categories {
+    border: solid 1px $border-dark;
+    border-radius: 1rem;
+    margin: 0.5rem;
+    overflow: hidden;
+    padding: 2rem;
+    width: 100%;
+
+    &__title {
+        font-size: 1.25rem;
+    }
+
+    &__list {
+        @include flex;
+
+        margin-left: -1rem;
+    }
+
+    &__list-item {
+        margin: 0.5rem;
+    }
+
+    &__list-item-pic {
+        border: solid 1px $border-dark;
+        border-radius: .5rem;
+        height: 3.5rem;
+        margin-bottom: 0.5rem;
+        width: 9rem;
+    }
+
+    &__list-item-name {
+        text-align: center;
+        width: 9rem;
+    }
+    
+}
