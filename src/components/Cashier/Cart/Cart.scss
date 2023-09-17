@@ -1,0 +1,11 @@
+@use "../../../styles/mixins" as *;
+@use "../../../styles/variables" as *;
+
+.cart {
+    border: solid 1px $border-dark;
+    border-radius: 1rem;
+    margin: 0.5rem;
+    overflow: hidden;
+    padding: 2rem;
+    width: 100%;
+}
