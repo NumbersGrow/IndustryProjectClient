@@ -1,0 +1,23 @@
+@use "../../../styles/mixins" as *;
+@use "../../../styles/variables" as *;
+
+.cart-product {
+    &__counter {
+        @include flex;
+        align-self: flex-end;
+        margin-top: 0.5rem;
+    }
+
+    &__counter-reduce, &__counter-increase {
+        @include flex(center, center);
+
+        border: solid 1px $border-dark;
+        border-radius: 50%;
+        width: 1.25rem;
+        height: 1.25rem;
+    }
+
+    &__counter-quantity {
+        margin: 0 0.25rem;
+    }
+}
