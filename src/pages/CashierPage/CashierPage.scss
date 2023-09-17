@@ -7,14 +7,20 @@
     margin: 1rem;
 
    &__sidebar {
-    width: 14%;
+        @include flex;
+        flex-direction: column;
+        width: 14%;
    }
 
    &__main {
-    max-width: 58%;
+        @include flex;
+        flex-direction: column;
+        max-width: 58%;
    }
 
     &__cart {
+        @include flex;
+        flex-direction: column;
         width: 25%;
     }
 }
