@@ -2,12 +2,12 @@
     display: flex;
     justify-content: space-between;    
     align-items: center;
- 
-    &__icon{
-        display: flex;
-        justify-content: flex-start;
-        margin-left: 0;
-        width:auto;
+    margin-bottom: 1rem;
+    h1{
+        font-weight: 800;
+    }
+    h4{
+        font-weight: 500;
     }
 }
 

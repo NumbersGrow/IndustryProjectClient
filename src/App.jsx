@@ -4,6 +4,7 @@ import './App.scss';
 import CashierPage from "./pages/CashierPage/CashierPage";
 
 import AccountPage from "./pages/AccountPage/AccountPage";
+import CustomerCartPage from './pages/CustomerCartPage/CustomerCartPage';
 
 function App() {
   return (
@@ -12,6 +13,8 @@ function App() {
         <Routes>
           <Route path="/cashier" element={<CashierPage />} />
           <Route path="/customer" element={<AccountPage />} />
+          <Route path="/customer/cart" element={<CustomerCartPage />} />
+
         </Routes>
       </main>
     </BrowserRouter>

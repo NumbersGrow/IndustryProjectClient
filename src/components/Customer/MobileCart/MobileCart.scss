@@ -1,0 +1,49 @@
+@use "../../../styles/mixins" as *;
+@use "../../../styles/variables" as *;
+
+.mobile-cart {
+    @include flex(space-between);
+    flex-direction: column;
+    flex-grow: 1;
+    margin: 0.5rem;
+    overflow: hidden;
+    padding: 1rem;
+    width: 100%;
+
+
+    &__title {
+        font-size: 1.25rem;
+    }
+
+    &__products {
+        flex-grow: 1;
+    }
+
+    &__summary-title {
+        font-size: 1rem;
+    }
+
+    &__summary-info {
+        @include flex(space-between, baseline);
+
+        font-size: .75rem;
+        padding: 0.25rem 0;
+    }
+
+    &__summary-info-total {
+        border-top: solid 1px $border-light;
+        font-size: .875rem;
+        font-weight: bold;
+    }
+
+    &__button {
+        align-self: flex-end;
+        background-color: $bg-primary-dark;
+        color: $text-primary-light;
+        letter-spacing: .125rem;
+        margin-top: 2rem;
+        padding: 0.5rem;
+        text-transform: uppercase;
+        width: 100%;
+    }
+}
