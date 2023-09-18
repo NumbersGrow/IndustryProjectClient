@@ -1,36 +1,8 @@
-
-@use "../../styles/_mixins" as *;
-@use "../../styles/_variables" as *;
-
-.account-page-wrapper {
-    position: relative;
-}
-
-.menu__account {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    z-index: 1;
-   background-color: $bg-primary-light;
-    transition: transform 0.3s ease-out;
-    transform: translateX(-110%);
-    
-    &--visible {
-        transform: translateX(0);
-    }
-
-    .account {
-        display: flex;
-        justify-content: space-between;
-    }
-
+.account {
     &__title {
         font-size: 1rem;
-        font-weight: 400;
+        font-weight: normal;
         margin: 1rem;
         text-align: center;
-     
-
     }
 }
