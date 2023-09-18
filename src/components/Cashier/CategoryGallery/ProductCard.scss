@@ -9,7 +9,7 @@
     flex-direction: column;
     margin: 1rem 1rem 0 0;
     padding: .5rem;
-    width:29%;
+    width:28%;
 
     &__pic {
         border: solid 1px $border-dark;
@@ -23,7 +23,12 @@
     }
 
     &__description {
+        display: -webkit-box; 
+        -webkit-line-clamp: 3;
+        -webkit-box-orient: vertical;
         font-size: .875rem;
+        overflow: hidden;
+        text-overflow: ellipsis;
     }
 
     &__counter {
