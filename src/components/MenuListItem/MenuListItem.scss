@@ -3,7 +3,7 @@
 
 .menu-item {
     @include flex(space-between, center);
-
+background-color: $bg-primary-light;
     border-bottom: solid 1px $border-light;
     padding: 0.5rem;
 

@@ -1,0 +1,13 @@
+.mobile-header {
+    display: flex;
+    justify-content: space-between;    
+    align-items: center;
+ 
+    &__icon{
+        display: flex;
+        justify-content: flex-start;
+        margin-left: 0;
+        width:auto;
+    }
+}
+
