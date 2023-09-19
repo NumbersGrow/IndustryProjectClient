@@ -27,7 +27,7 @@ function CreditCardForm() {
 
     return (
         <div className='credit-payment'>
-        <section>
+        <section className='credit-payment__header'>
             <h2>New card</h2>
             <div className='credit-payment-wrapper'>
             <div className='credit-payment-wrapper__card'>
@@ -39,62 +39,73 @@ function CreditCardForm() {
             </div>
           
         </section>
+        <section className='credit-payment__details'>
 
-        <form  className='credit-payment__form' onSubmit={handleSubmit}>
-            <div>
-                <label>
-                    Card Holder Name:
+       
+        <form   onSubmit={handleSubmit}>
+            <div className='credit-payment__details-form'>
+            <div className="credit-payment__details-form__name"> 
+                      <label>  Cardholder name </label>
                     <input 
                         type="text" 
                         name="cardHolderName" 
+                        placeholder='Rebeca Sousa'
                         value={formData.cardHolderName} 
                         onChange={handleChange} 
                         required
                     />
-                </label>
-               <div></div>
+               
             </div>
-            <div>
+          
+            
+            <div className="credit-payment__details-form__number" >
                 <label>
-                    Card Number:
+                    Card Number </label>
                     <input 
                         type="text" 
                         name="cardNumber" 
+                        placeholder='9999 8888 9999 0909'
                         value={formData.cardNumber} 
                         onChange={handleChange} 
                         maxLength="16"
                         required
                     />
-                </label>
+               
             </div>
             <div>
-                <label>
-                    Expiry Date (MM/YY):
+
+            </div>
+            <div  className="credit-payment__details-form--bottom">
+            <div className="credit-payment__details-form__date">
+                <label> Exp date </label>
                     <input 
                         type="text" 
                         name="expiryDate" 
+                        placeholder='02/2022'
                         value={formData.expiryDate} 
                         onChange={handleChange} 
                         maxLength="5"
                         required
                     />
-                </label>
-            </div>
-            <div>
-                <label>
-                    CVV:
+            </div >
+            <div className="credit-payment__details-form__cvc">
+                <label> CVC </label>
                     <input 
                         type="password" 
                         name="cvv" 
+                        placeholder='123'
                         value={formData.cvv} 
                         onChange={handleChange} 
                         maxLength="3"
                         required
                     />
-                </label>
+               
+            </div>
+            </div>
             </div>
             <button type="submit">Submit</button>
         </form>
+        </section  >
         </div>
     );
 }
