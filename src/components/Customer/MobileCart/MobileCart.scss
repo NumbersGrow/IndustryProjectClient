@@ -5,14 +5,13 @@
     @include flex(space-between);
     flex-direction: column;
     flex-grow: 1;
-    margin: 0.5rem;
     overflow: hidden;
-    padding: 1rem;
     width: 100%;
 
-
     &__title {
-        font-size: 1.25rem;
+        font-size: .8rem;
+        margin-bottom: 0.5rem;
+        font-weight: 700;
     }
 
     &__products {
@@ -21,27 +20,57 @@
 
     &__summary-title {
         font-size: 1rem;
+        width: 100%;
+        border-bottom: $border-light .0625rem solid;
     }
 
     &__summary-info {
-        @include flex(space-between, baseline);
+        display: flex;
+        flex-direction: column;
 
-        font-size: .75rem;
-        padding: 0.25rem 0;
+        &-detail {
+            @include flex(space-between, baseline);
+            font-size: .75rem;
+            padding: 0.25rem 0;
+        }
+    }
+
+   
+
+    &__summary-info-cost {
+        text-align: left;
+        width: 50px;
     }
 
     &__summary-info-total {
         border-top: solid 1px $border-light;
         font-size: .875rem;
+        border-bottom: $border-light .0625rem solid;
+        padding-top: .7rem;
+        padding-bottom: .75rem;
+        span{
+            font-weight: 700;
+        }
+    }
+
+    &__summary-info-payment {
+        font-size: .875rem;
         font-weight: bold;
+        padding-top: .75rem;
+        padding-bottom: .75rem;
+    }
+
+    &__summary-info-buttons {
+        @include flex(space-around, center);
+        width: 100%;
+        margin-top: 1rem;
     }
 
     &__button {
-        align-self: flex-end;
         background-color: $bg-primary-dark;
         color: $text-primary-light;
         letter-spacing: .125rem;
-        margin-top: 2rem;
+        margin-top: 1rem;
         padding: 0.5rem;
         text-transform: uppercase;
         width: 100%;
