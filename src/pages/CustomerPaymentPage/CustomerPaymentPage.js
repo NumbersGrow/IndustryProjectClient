@@ -6,7 +6,7 @@ import CreditCardForm from '../../components/CreditCardForm/CreditCardForm';
 function CustomerCartPage() {
     
     return (
-  <div>
+  <div className='Container'>
 <HeaderMobile linkText="BACK" />
 <CreditCardForm/>
 
