@@ -3,8 +3,17 @@ import './MobileCart.scss';
 import MobileProductInCart from './MobileProductInCart';
 import PaymentButton from '../../../components/PaymentButton/PaymentButton';
 import {ReactComponent as ApplePayIcon} from "../../../assets/icons/apple-pay-logo-svgrepo-com.svg";
+import { useNavigate } from 'react-router-dom';
 
 function MobileCart() {
+    const navigate = useNavigate()
+
+const handleNavigate = () =>{
+    console.log("go to next page");
+    navigate('/customer/cart/payment');
+
+}
+
     return (
         <section className="mobile-cart">
             <div className="mobile-cart__header">
@@ -41,7 +50,7 @@ function MobileCart() {
                 </div>
                 <div className="mobile-cart__summary-info-buttons">
                     
-                <PaymentButton label="Credit Card"/>
+                <PaymentButton label="Credit Card" onClick={handleNavigate}/>
                 <PaymentButton logoSrc={<ApplePayIcon/>} />
                 </div>
             </div>

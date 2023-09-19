@@ -1,0 +1,25 @@
+@use "../../styles//mixins" as *;
+@use "../../styles/variables" as *;
+
+
+.credit-payment{
+    &-wrapper{
+        padding: 1rem;
+        @include flex(center, center);
+        &__card{
+        background-color: rgb(36, 12, 119);
+        border-radius: 0.4rem;
+        height: 10rem;
+        width: 16rem;
+        }
+   }
+   &-scanner{
+    @include flex(flex-start, center);
+
+    &__img{
+        width: 1.25rem;
+        margin-right: 1rem;;
+    }
+   }
+}
+  
