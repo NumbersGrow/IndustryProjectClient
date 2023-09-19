@@ -3,7 +3,7 @@ import ProductInCart from "./ProductInCart";
 
 import { ReactComponent as CartIcon } from "../../../assets/icons/cart.svg";
 
-function Cart() {
+function Cart({isHidden}) {
     return (
         <section className="cart">
             <div className="cart__header">
@@ -35,7 +35,7 @@ function Cart() {
                     <p className="cart__summary-info-cost">$0.00</p>
                 </div>
             </div>
-            <button className="cart__button">Next</button>
+            <button className={`cart__button ${isHidden}`}>Next</button>
         </section>
     )
 }
