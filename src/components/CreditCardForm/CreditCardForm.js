@@ -1,6 +1,9 @@
 import React, { useState } from 'react';
 import "./CreditCardForm.scss";
 import { ReactComponent as CameraIcon } from "../../assets/icons/camera.svg";
+import { ReactComponent as CheckIcon } from "../../assets/icons/checkbox.svg";
+import { ReactComponent as MasterIcon} from "../../assets/icons/Mastercard-Logo.wine.svg";
+import FormButton from '../FormButton/FormButton';
 
 
 function CreditCardForm() {
@@ -60,7 +63,7 @@ function CreditCardForm() {
             
             <div className="credit-payment__details-form__number" >
                 <label>
-                    Card Number </label>
+                    Card number </label>
                     <input 
                         type="text" 
                         name="cardNumber" 
@@ -72,6 +75,7 @@ function CreditCardForm() {
                     />
                
             </div>
+            <MasterIcon className="credit-payment__details-form__number-master"/>
             <div>
 
             </div>
@@ -102,8 +106,12 @@ function CreditCardForm() {
                
             </div>
             </div>
+            <div className="credit-payment__details-form__save" >
+            <CheckIcon className="credit-payment__details-form__save-icon"  />
+            <p>Save your information card</p>
             </div>
-            <button type="submit">Submit</button>
+            </div>
+            <FormButton value="PAY NOW" className="form-button" type="submit" />
         </form>
         </section  >
         </div>
