@@ -8,8 +8,8 @@
     
     &__pic {
         object-fit: cover;
-        width: 4.5rem;
-        height: 4.5rem;
+        width: 5.5rem;
+        height: 5.5rem;
         border-radius: .1rem;
     }
 
@@ -26,17 +26,17 @@
       }
     }
     &__name {
-        font-size: .75rem;
+        font-size: 1rem;
     }
 
     &__category {
-        font-size: .625rem;
+        font-size: 1rem;
     }
 
     &__counter {
         @include flex (flex-start, center);
         align-self: flex-end;
-        font-size: .75rem;
+        font-size: 1rem;
         margin-top: 0.5rem;
     }
 
@@ -57,7 +57,7 @@
     }
 
     &__cost {
-        font-size: .75rem;
+        font-size: 1rem;
         font-weight: 800;
         align-self: flex-end;
     }
