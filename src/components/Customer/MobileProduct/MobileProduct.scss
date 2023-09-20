@@ -1,0 +1,41 @@
+@use "../../../styles/mixins" as *;
+@use "../../../styles/variables" as *;
+
+.mobile-cart-product {
+    margin-bottom: 1rem;
+    padding: 0;
+    @include flex(center , center);
+    flex-direction: column;
+    
+    &__pic {
+        object-fit: cover;
+        width: 5.5rem;
+        height: 5.5rem;
+        border-radius: .1rem;
+    }
+
+    &__info {
+        margin: 0 0.5rem;
+        flex-grow: 1;
+        display: flex;
+        flex-direction: column;
+        @include flex(space-between, flex-start);
+        &-bottom{
+            width: 100%;
+            @include flex(space-between, flex-end)
+      
+      }
+    }
+    &__name {
+        font-size: 1rem;
+    }
+
+    &__category {
+        font-size: 1rem;
+    }
+    &__cost {
+        font-size: 1rem;
+        font-weight: 800;
+        align-self: flex-end;
+    }
+}
