@@ -2,39 +2,42 @@
 @use "../../../styles/variables" as *;
 
 .categories {
+    background-color: $bg-primary-light;
     border: solid 1px $border-dark;
     border-radius: 1rem;
-    height: 11.5rem;
+    height: 10rem;
     margin: 0.5rem;
     overflow: hidden;
     padding: 1rem;
     width: 100%;
 
     &__title {
-        font-size: 1.25rem;
+        font-family: 'Lush Handwritten', "Helvetica Neue";
+        font-size: 1.5rem;
     }
 
     &__list {
         @include flex;
 
-        margin-left: -1rem;
+        list-style-type: none;
+        margin-block-start: 0em;
+        margin-block-end: 0em;
+        padding-inline-start: 0px;
+        margin-left: -0.5rem;
     }
 
     &__list-item {
-        margin: 0.5rem;
-    }
-
-    &__list-item-pic {
         border: solid 1px $border-dark;
-        border-radius: .5rem;
-        height: 3.5rem;
-        margin-bottom: 0.5rem;
-        width: 9rem;
-    }
-
-    &__list-item-name {
+        border-radius: 1.25rem;
+        padding: 1rem;
+        margin: 1rem 0.5rem;
         text-align: center;
-        width: 9rem;
+        white-space: nowrap;
+
+        &--active {
+            background-color: $bg-primary-highlight;
+            font-weight: bold;
+        }
     }
     
 }

@@ -9,7 +9,7 @@ import Cart from "../../components/Cashier/Cart/Cart";
 
 function CashierPage() {
     return (
-        <div>
+        <div className="cashier-page__bg">
             <Header />
             <div className="cashier-page">
                 <div className="cashier-page__sidebar">

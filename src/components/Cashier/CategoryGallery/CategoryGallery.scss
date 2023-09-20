@@ -2,12 +2,18 @@
 @use "../../../styles/variables" as *;
 
 .category-gallery {
+    background-color: $bg-primary-light;
     border: solid 1px $border-dark;
     border-radius: 1rem;
     flex-grow: 1;
     margin: 0.5rem;
     padding: 1rem;
     width: 100%;
+
+    &__title {
+        font-family: 'Lush Handwritten', "Helvetica Neue";
+        font-size: 1.5rem;
+    }
 
     &__container {
         @include flex;
@@ -22,5 +28,6 @@
 
     &__next {
         align-self: flex-end;
+        flex-grow: 0;
     }
 }

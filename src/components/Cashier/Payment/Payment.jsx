@@ -1,4 +1,5 @@
 import './Payment.scss';
+import { Link } from "react-router-dom";
 
 
 function Payment() {
@@ -9,11 +10,11 @@ function Payment() {
             </div>
 
             <div className="payment__types">
-                <button className="payment__type">Payment Type</button>
-                <button className="payment__type">Payment Type</button>
-                <button className="payment__type">Payment Type</button>
+                <button className="payment__type">Debit</button>
+                <button className="payment__type">Credit</button>
+                <button className="payment__type">Apple/Google Pay</button>
             </div>
-            <button className="payment__button">Confirm</button>
+            <Link to="/cashier/pay"><button className="payment__button">Confirm</button></Link>
         </section>
     )
 }
