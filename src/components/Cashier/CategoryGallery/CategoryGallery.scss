@@ -10,6 +10,11 @@
     padding: 1rem;
     width: 100%;
 
+    &__title {
+        font-family: 'Lush Handwritten', "Helvetica Neue";
+        font-size: 1.5rem;
+    }
+
     &__container {
         @include flex;
     }
@@ -23,5 +28,6 @@
 
     &__next {
         align-self: flex-end;
+        flex-grow: 0;
     }
 }

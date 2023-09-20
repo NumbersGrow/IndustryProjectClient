@@ -2,7 +2,7 @@
 @use "../../../styles/variables" as *;
 
 .cart-product {
-    @include flex(space-between);
+    @include flex(space-between, center);
     margin: 1rem 0;
 
     &__pic {
@@ -16,6 +16,7 @@
     }
 
     &__name {
+        font-family: 'Lush Handwritten', "Helvetica Neue";
         font-size: .75rem;
     }
 

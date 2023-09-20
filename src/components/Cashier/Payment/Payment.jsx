@@ -9,9 +9,9 @@ function Payment() {
             </div>
 
             <div className="payment__types">
-                <button className="payment__type">Payment Type</button>
-                <button className="payment__type">Payment Type</button>
-                <button className="payment__type">Payment Type</button>
+                <button className="payment__type">Debit</button>
+                <button className="payment__type">Credit</button>
+                <button className="payment__type">Apple/Google Pay</button>
             </div>
             <button className="payment__button">Confirm</button>
         </section>

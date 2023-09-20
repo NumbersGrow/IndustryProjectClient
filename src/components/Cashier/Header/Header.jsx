@@ -9,7 +9,7 @@ function Header() {
             <img className="header__logo" src={Logo} alt="Lush logo" />
             <div className="header__search">
                 <input type="search" className="header__search-input" id="search" placeholder="search"></input>
-                <Camera />
+                <Camera className="header__icon" />
             </div>
             <p className="header__store">Store #100000</p>
         </header>
