@@ -6,6 +6,11 @@
 
     margin: 1rem;
 
+    &__bg {
+        margin: -1rem;
+        background-color: $bg-primary-dark;
+    }
+
    &__sidebar {
         @include flex;
         flex-direction: column;

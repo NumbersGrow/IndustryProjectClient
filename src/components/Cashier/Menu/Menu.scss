@@ -4,6 +4,7 @@
 .menu {
     @include flex(flex-start, center);
 
+    background-color: $bg-primary-light;
     border: solid 1px $border-dark;
     border-radius: 1rem;
     flex-direction: column;

@@ -4,6 +4,7 @@
 .payment {
     @include flex(space-between);
 
+    background-color: $bg-primary-light;
     border: solid 1px $border-dark;
     border-radius: 1rem;
     flex-direction: column;

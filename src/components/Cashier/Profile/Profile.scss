@@ -1,7 +1,9 @@
+@use "../../../styles/fonts.scss" as *;
 @use "../../../styles/mixins" as *;
 @use "../../../styles/variables" as *;
 
 .profile {
+    background-color: $bg-primary-light;
     border: solid 1px $border-dark;
     border-radius: 1rem;
     height: 11.5rem;
@@ -11,7 +13,8 @@
     width: 100%;
 
     &__name {
-        font-size: 1rem;
+        font-family: 'Lush Handwritten', "Helvetica Neue";
+        font-size: 1.5rem;
     }
 
     &__position {

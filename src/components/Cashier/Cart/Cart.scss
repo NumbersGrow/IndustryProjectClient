@@ -4,6 +4,7 @@
 .cart {
     @include flex(space-between);
 
+    background-color: $bg-primary-light;
     border: solid 1px $border-dark;
     border-radius: 1rem;
     flex-direction: column;
@@ -48,8 +49,11 @@
 
     &__button {
         align-self: flex-end;
-        background-color: $bg-primary-dark;
-        color: $text-primary-light;
+        background-color: $bg-primary-highlight;
+        border: none;
+        color: $text-primary-dark;
+        font-weight: bold;
+        font-size: 1.25rem;
         letter-spacing: .125rem;
         margin-top: 2rem;
         padding: 0.5rem;

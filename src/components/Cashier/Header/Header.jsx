@@ -2,7 +2,7 @@ import "./Header.scss";
 import { ReactComponent as Camera } from "../../../assets/icons/camera.svg";
 
 function Header() {
-    const Logo = require("../../../assets/logo/lush-logo.png");
+    const Logo = require("../../../assets/logo/lush-logo-white.png");
 
     return (
         <header className="header">
