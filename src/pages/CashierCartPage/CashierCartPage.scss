@@ -1,0 +1,26 @@
+@use "../../styles/mixins" as *;
+@use "../../styles/variables" as *;
+
+.cashier-page {
+    @include flex(space-between, stretch);
+
+    margin: 1rem;
+
+   &__sidebar {
+        @include flex;
+        flex-direction: column;
+        width: 14%;
+   }
+
+   &__main {
+        @include flex;
+        flex-direction: column;
+        max-width: 58%;
+   }
+
+    &__payment {
+        @include flex;
+        flex-direction: column;
+        width: 25%;
+    }
+}
