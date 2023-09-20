@@ -2,16 +2,34 @@
 @use "../../../styles/variables" as *;
 
 .mobile-cart-product {
+  
     margin-bottom: 1rem;
     padding: 0;
     @include flex(center , center);
     flex-direction: column;
-    
+    &__pic-container{
+        position: relative;
+        &-add{
+            @include flex(center, center);
+            position: absolute;
+            padding-bottom: .125rem;
+            top: -0.3125rem; 
+            right: .3125rem; 
+            transform: translateX(50%); 
+            width: 24px; 
+            height: 24px; 
+            border-radius: 50%;
+            background-color: $bg-primary-light; 
+            border: 1px solid $bg-primary-dark; 
+            cursor: pointer; 
+            z-index: 2; 
+        }
+    }
     &__pic {
         object-fit: cover;
         width: 5.5rem;
         height: 5.5rem;
-        border-radius: .1rem;
+        border-radius: .4rem;
     }
 
     &__info {
@@ -29,13 +47,9 @@
     &__name {
         font-size: 1rem;
     }
-
-    &__category {
-        font-size: 1rem;
-    }
     &__cost {
         font-size: 1rem;
-        font-weight: 800;
+        font-weight: 400;
         align-self: flex-end;
     }
 }

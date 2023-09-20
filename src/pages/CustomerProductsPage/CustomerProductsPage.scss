@@ -1,6 +1,11 @@
 @use "../../styles/mixins" as *;
 @use "../../styles/variables" as *;
 
-.container-products{
-@include flex(flex-start, center);
+.container {
+  h2 {
+    margin-bottom: 1rem;
+  }
+  &-products {
+    @include flex(flex-start, center);
+  }
 }
