@@ -1,0 +1,19 @@
+@use "../../../styles/_mixins" as *;
+@use "../../../styles/_variables" as *;
+
+.pay-header {
+    @include flex(space-between, center);
+    border-bottom: solid 2px $border-light;
+    padding: 0 2rem 0 1.5rem;
+    margin: 0 -1rem;
+
+    &__logo {
+        margin: 0 1rem;
+        width: 12.5rem;
+    }
+
+    &__store {
+        color: $text-primary-dark;
+        font-weight: bold;
+    }
+}

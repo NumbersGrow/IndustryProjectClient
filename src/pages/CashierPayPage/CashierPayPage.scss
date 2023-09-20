@@ -1,0 +1,39 @@
+@use "../../styles/mixins" as *;
+@use "../../styles/variables" as *;
+
+.pay {
+    margin: 2rem 1rem;
+    text-align: center;
+
+   &__amount-title {
+    font-size: 2rem;
+   }
+
+   &__amount {
+    font-size: 1.5rem;
+    font-weight: bold;
+   }
+
+   &__tap-container {
+    border: solid 1px $border-dark;
+    border-radius: 1.25rem;
+    margin: 1.5rem auto;
+    padding: 3rem 2rem;
+    text-decoration: none;
+    width: 300px;
+   }
+
+   &__tap-title {
+    color: $text-primary-dark;
+    text-decoration: none;
+   }
+
+   &__icon {
+    height: 50px;
+    width: 50px;
+   }
+}
+
+a {
+    text-decoration: none;
+}

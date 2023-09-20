@@ -1,15 +1,16 @@
-import './CashierPage.scss';
+import './CashierCartPage.scss';
 
 import Header from "../../components/Cashier/Header/Header";
 import Profile from "../../components/Cashier/Profile/Profile";
 import Menu from "../../components/Cashier/Menu/Menu";
-import Categories from "../../components/Cashier/Categories/Categories";
-import CategoryGallery from "../../components/Cashier/CategoryGallery/CategoryGallery";
 import Cart from "../../components/Cashier/Cart/Cart";
+import Payment from "../../components/Cashier/Payment/Payment";
 
-function CashierPage() {
+function CashierCartPage() {
+    const isHidden = "cart__button--hidden";
+
     return (
-        <div className="cashier-page__bg">
+        <div>
             <Header />
             <div className="cashier-page">
                 <div className="cashier-page__sidebar">
@@ -18,12 +19,11 @@ function CashierPage() {
                 </div>
 
                 <div className="cashier-page__main">
-                        <Categories />
-                        <CategoryGallery />
+                    <Cart isHidden={isHidden} />    
                 </div>
 
-            <div className="cashier-page__cart">
-                <Cart />
+            <div className="cashier-page__payment">
+                <Payment />
             </div>
         </div>
 
@@ -31,4 +31,4 @@ function CashierPage() {
     )
 }
 
-export default CashierPage;
+export default CashierCartPage;

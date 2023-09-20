@@ -1,7 +1,7 @@
 @use "../../../styles/mixins" as *;
 @use "../../../styles/variables" as *;
 
-.cart {
+.payment {
     @include flex(space-between);
 
     background-color: $bg-primary-light;
@@ -26,49 +26,34 @@
         font-size: 1.25rem;
     }
 
-    &__cart-icon {
-        height: 25px;
-        width: 25px;
-    }
-
-    &__products {
+    &__types {
         flex-grow: 1;
     }
 
-    &__summary-title {
-        font-size: 1rem;
-    }
+    &__type {
+        background-color: $bg-primary-light;
+        border: solid 1px $border-dark;
+        margin-top: 1rem;
+        padding: 0.5rem;
+        text-transform: uppercase;
+        width: 100%;
 
-    &__summary-info {
-        @include flex(space-between, baseline);
-
-        font-size: .75rem;
-        padding: 0.25rem 0;
-    }
-
-    &__summary-info-total {
-        border-top: solid 1px $border-light;
-        font-size: .875rem;
-        font-weight: bold;
+        &:hover {
+            background-color: $bg-secondary-light;
+        }
     }
 
     &__button {
         align-self: flex-end;
         background-color: $bg-primary-dark;
-        border: solid 1px $border-dark;
         border-radius: 1.25rem;
         color: $text-primary-light;
         font-weight: bold;
-        font-size: 1.25rem;
         letter-spacing: .125rem;
         margin-top: 2rem;
         padding: 0.5rem;
         text-transform: uppercase;
         width: 100%;
-
-        &--hidden {
-            display: none;
-        }
 
         &:hover {
             background-color: $bg-primary-highlight;

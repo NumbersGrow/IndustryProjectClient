@@ -6,11 +6,6 @@
 
     margin: 1rem;
 
-    &__bg {
-        margin: -1rem;
-        background-color: $bg-primary-dark;
-    }
-
    &__sidebar {
         @include flex;
         flex-direction: column;
@@ -23,7 +18,7 @@
         max-width: 58%;
    }
 
-    &__cart {
+    &__payment {
         @include flex;
         flex-direction: column;
         width: 25%;

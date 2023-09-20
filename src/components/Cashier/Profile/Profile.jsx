@@ -1,11 +1,14 @@
 import './Profile.scss';
 
+import { ReactComponent as Persona } from "../../../assets/icons/persona.svg";
+
+
 function Profile() {
     return (
         <section className="profile">
-            <h2 className="profile__name">Name I</h2>
-            <h3 className="profile__position">Position</h3>
-            <img className="profile__pic" src="https://upload.wikimedia.org/wikipedia/commons/8/89/Portrait_Placeholder.png" alt="placeholder profile" />
+            <h2 className="profile__name">Mario</h2>
+            <h3 className="profile__position">Cashier</h3>
+            <Persona className="profile__pic" />
         </section>
     )
 }
