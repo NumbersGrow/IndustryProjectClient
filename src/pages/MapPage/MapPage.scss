@@ -1,0 +1,65 @@
+@use "../../styles/mixins" as *;
+@use "../../styles/variables" as *;
+
+// .map {
+//     background-color: rgba(50, 50, 50, 0.5);
+//     z-index: 5;
+// }
+
+.map__wrapper {
+    // background-color: rgba(50, 50, 50, 0.5);
+    // z-index: 1;
+}
+
+.map-header {
+    &__title {
+        font-weight: bold;
+        font-size: 1.05rem;
+    }
+}
+
+.store-title {
+    padding-top: 1.8rem;
+    padding-bottom: 0.5rem;
+}
+
+.card {
+    padding-bottom: 1rem;
+}
+
+.alert {
+z-index: 9;
+    &__box {
+        z-index: 1;
+        background-color: $bg-primary-light;
+        border-radius: 0.5rem;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        top: 18rem;
+        left: 3rem;
+        width: 75%;
+        height: 17rem;
+        // z-index: 1;
+    }
+    &__title {
+        padding: 1rem 0 0.5rem 0;
+    }
+    &__text {
+        font-size: 0.9rem;
+        font-weight: bold;
+        padding: 0 2rem 1rem 2rem;
+    }
+    &__links {
+        text-align: center;
+        font-size: 1.2rem;
+        // display: flex;
+        // flex-direction: column;
+    }
+    &__link {
+        color: #1C98F3;
+        border-top: 0.1rem solid $border-light;
+        padding: 0.5rem 0;
+    }
+}
