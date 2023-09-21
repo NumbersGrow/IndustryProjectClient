@@ -18,4 +18,8 @@
   &__img {
     padding-left: 1.5rem;
   }
+  &__wrapper {
+    background-color: rgba(50, 50, 50, 0.61);
+    z-index: 1;
+  }
 }
