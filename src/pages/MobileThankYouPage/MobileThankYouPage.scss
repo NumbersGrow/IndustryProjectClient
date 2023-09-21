@@ -1,0 +1,55 @@
+@use "../../styles/mixins" as *;
+@use "../../styles/variables" as *;
+
+.thank-you {
+  background-image: url(../../assets/images/background.jpg);
+  background-size: 50rem;
+  background-repeat: repeat-y;
+  background-position: center;
+  z-index: 10;
+
+  &__background {
+    z-index: 1;
+    background-color: rgba(255, 255, 255, 0.7);
+  }
+
+  &__title {
+    font-family: "Lush Handwritten";
+    font-size: 3rem;
+    text-align: center;
+    padding: 2rem 0 1rem 0;
+  }
+  &__image-wrapper {
+    display: flex;
+    justify-content: center;
+  }
+  &__image {
+    width: 20rem;
+    border-radius: 0.5rem;
+  }
+  &__info {
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-align: center;
+    padding-top: 2rem;
+  }
+  &__button-wrapper {
+    display: flex;
+    justify-content: center;
+    padding-top: 1.5rem;
+  }
+  &__button {
+    @include flex(center, center);
+    border: none;
+    border-radius: 2rem;
+    background-color: $border-dark;
+    color: $text-primary-light;
+    width: 18rem;
+    height: 3rem;
+    font-size: 1.1rem;
+    font-weight: bold;
+  }
+  &__footer {
+    padding-top: 5rem;
+  }
+}

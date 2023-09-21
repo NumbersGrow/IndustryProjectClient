@@ -10,6 +10,9 @@ import CustomerCartPage from './pages/CustomerCartPage/CustomerCartPage';
 import CustomerPaymentPage from "./pages/CustomerPaymentPage/CustomerPaymentPage";
 import CustomerProductsPage from './pages/CustomerProductsPage/CustomerProductsPage';
 
+import MapPage from './pages/MapPage/MapPage';
+import MobileThankYouPage from "./pages/MobileThankYouPage/MobileThankYouPage";
+
 function App() {
   return (
     <BrowserRouter>
@@ -26,6 +29,8 @@ function App() {
           <Route path="/customer/cart/payment" element={<CustomerPaymentPage />} />
 
 
+          <Route path="customer/map" element={<MapPage />} />
+          <Route path="customer/thank-you" element={<MobileThankYouPage />} />
         </Routes>
       </main>
     </BrowserRouter>

@@ -1,0 +1,29 @@
+@use "../../../styles/mixins" as *;
+@use "../../../styles/variables" as *;
+
+.store-card {
+    border: 0.1rem solid $border-dark;
+    border-radius: 0.4rem;
+    height: 4rem;
+    display: flex;
+    margin-bottom: 1rem;
+    &__left {
+        width: 60%;
+        padding: 0.5rem 0 0 0.5rem;
+    }
+    &__title {
+        font-weight: bold;
+        font-size: 0.8rem;
+    }
+    &__address {
+        font-size: 0.7rem;
+        padding-right: 0.4rem;
+    }
+    &__right{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+

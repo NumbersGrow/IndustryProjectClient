@@ -1,0 +1,79 @@
+@use "../../styles/mixins" as *;
+@use "../../styles/variables" as *;
+
+.map {
+  margin: 0;
+
+  &__background {
+    margin: 0;
+    padding: 0;
+    background-image: url(../../assets/images/map.png);
+    background-position: center;
+    width: 100%;
+    height: 18rem;
+  }
+  &__top {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 0.5rem;
+  }
+
+  &__view {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: $bg-primary-light;
+    border-radius: 0.2rem;
+    width: 6.5rem;
+    margin-left: 0.7rem;
+    height: 2rem;
+  }
+  &__view-wrapper {
+    border-right: 0.12rem solid $border-light;
+    height: 2rem;
+    padding-right: 0.5rem;
+  }
+  &__view-left {
+    font-weight: bold;
+    font-size: 0.8rem;
+    padding-left: 0.4rem;
+    padding-top: 0.4rem;
+  }
+  &__view-right {
+    font-size: 0.8rem;
+    padding-right: 0.4rem;
+    color: $text-secondary-dark;
+  }
+  &__zoom {
+    padding-right: 0.5rem;
+  }
+  &__center {
+    height: 6.3rem;
+    display: flex;
+    padding-left: 7.6rem;
+    align-items: flex-end;
+    position: relative;
+  }
+  &__center-image {
+    // z-index: 10;
+  }
+  &__center-dot {
+    // z-index: 1;
+    position: absolute;
+    bottom: 1rem;
+    left: 8.1rem;
+  }
+  &__bottom {
+    display: flex;
+    align-items: center;
+    padding-top: 5.8rem;
+  }
+  &__bottom-context {
+    display: flex;
+    padding-left: 2.3rem;
+  }
+  &__context {
+    font-size: 0.6rem;
+    padding-right: 0.2rem;
+  }
+}
