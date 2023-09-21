@@ -8,6 +8,7 @@ import CashierPayPage from "./pages/CashierPayPage/CashierPayPage";
 import AccountPage from "./pages/AccountPage/AccountPage";
 import CustomerCartPage from './pages/CustomerCartPage/CustomerCartPage';
 import CustomerPaymentPage from "./pages/CustomerPaymentPage/CustomerPaymentPage";
+import CustomerProductsPage from './pages/CustomerProductsPage/CustomerProductsPage';
 
 function App() {
   return (
@@ -20,6 +21,7 @@ function App() {
           {/* <Route path="/cashier/thank-you" element={<CashierCartPage />} /> */}
           
           <Route path="/customer" element={<AccountPage />} />
+          <Route path="/customer/products" element={<CustomerProductsPage />} />
           <Route path="/customer/cart" element={<CustomerCartPage />} />
           <Route path="/customer/cart/payment" element={<CustomerPaymentPage />} />
 

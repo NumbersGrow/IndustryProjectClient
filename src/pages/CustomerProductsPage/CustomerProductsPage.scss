@@ -1,0 +1,23 @@
+@use "../../styles/mixins" as *;
+@use "../../styles/variables" as *;
+
+.container {
+  width: auto;
+  h3 {
+    margin-bottom: 1rem;
+  }
+  &-products {
+    @include flex(flex-start, center);
+    &__more{
+      @include flex(flex-end, center);
+
+    }      
+    &__icon{
+      width: 20px
+    }
+  }
+
+  p{
+    font-weight: 700;
+  }
+}

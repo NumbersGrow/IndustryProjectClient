@@ -1,11 +1,9 @@
 import './MobileProductInCart.scss';
 import { React, useState } from 'react'
 import mockData from '../../../assets/mockdata/mockdata';
-import { useNavigate } from 'react-router-dom';
 
 
 function MobileProductInCart() {
-    const navigate = useNavigate
     const [counter, setCounter] = useState(1);
 
     const increase = () =>{
@@ -15,7 +13,6 @@ function MobileProductInCart() {
         setCounter(count => count - 1)
     };
     const updatePrice = () =>{
-        navigate('/customer/cart/payment')
     };
 
     return (

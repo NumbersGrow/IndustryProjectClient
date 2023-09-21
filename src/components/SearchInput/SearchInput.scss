@@ -1,0 +1,24 @@
+.search-container {
+  max-width: 25rem;
+  border-radius: .25rem;
+  
+  .input-wrapper {
+      position: relative;
+      width: 100%;
+      
+      input {
+          width: 270px;
+          padding: .625rem;
+          padding-right: 1.875rem; 
+          border-radius: .25rem;
+      }
+      
+      .arrow-icon {
+          position: absolute;
+          right: .625rem;        
+          top: 45%;
+          transform: translateY(-50%);
+          pointer-events: none; 
+      }
+  }
+}

@@ -1,0 +1,14 @@
+@use "../../../styles/mixins" as *;
+@use "../../../styles/variables" as *;
+
+
+.mobile-search{
+    margin-bottom: 1rem;
+    p{
+        margin-bottom: 1rem;
+    }
+    &__search{
+        @include flex(flex-start, center);
+      gap: 1rem;
+    }
+}
