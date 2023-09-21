@@ -1,4 +1,18 @@
-// .map-image {
-//     padding: 0;
-//     margin: 0;
-// }
+@use "../../styles/mixins" as *;
+@use "../../styles/variables" as *;
+
+.map-header {
+    &__title {
+        font-weight: bold;
+        font-size: 1.05rem;
+    }
+}
+
+.store-title {
+    padding-top: 1.8rem;
+    padding-bottom: 0.5rem;
+}
+
+.card {
+    padding-bottom: 1rem;
+}
