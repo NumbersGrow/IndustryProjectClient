@@ -1,4 +1,5 @@
-import React, { useState } from 'react';
+import React, { useState} from 'react';
+import { useNavigate } from 'react-router-dom';
 import "./CreditCardForm.scss";
 import { ReactComponent as CameraIcon } from "../../assets/icons/camera.svg";
 import { ReactComponent as CheckIcon } from "../../assets/icons/checkbox.svg";
@@ -7,6 +8,8 @@ import FormButton from '../FormButton/FormButton';
 
 
 function CreditCardForm() {
+    const navigate = useNavigate();
+
     const [formData, setFormData] = useState({
         cardHolderName: '',
         cardNumber: '',
@@ -14,18 +17,8 @@ function CreditCardForm() {
         cvv: ''
     });
 
-    const handleChange = (e) => {
-        const { name, value } = e.target;
-        setFormData(prevState => ({
-            ...prevState,
-            [name]: value
-        }));
-    };
-
-    const handleSubmit = (e) => {
-        e.preventDefault();
-        console.log(formData);  
-        alert('Form submitted! Check the console.');
+    const handleSubmit = () => {
+     navigate('/customer');
     };
 
     return (
@@ -53,9 +46,6 @@ function CreditCardForm() {
                         type="text" 
                         name="cardHolderName" 
                         placeholder='Rebeca Sousa'
-                        value={formData.cardHolderName} 
-                        onChange={handleChange} 
-                        required
                     />
                
             </div>
@@ -68,14 +58,11 @@ function CreditCardForm() {
                         type="text" 
                         name="cardNumber" 
                         placeholder='9999 8888 9999 0909'
-                        value={formData.cardNumber} 
-                        onChange={handleChange} 
                         maxLength="16"
-                        required
                     />
-               
+                <MasterIcon className="credit-payment__details-form__number-master"/>
+
             </div>
-            <MasterIcon className="credit-payment__details-form__number-master"/>
             <div>
 
             </div>
@@ -86,10 +73,7 @@ function CreditCardForm() {
                         type="text" 
                         name="expiryDate" 
                         placeholder='02/2022'
-                        value={formData.expiryDate} 
-                        onChange={handleChange} 
                         maxLength="5"
-                        required
                     />
             </div >
             <div className="credit-payment__details-form__cvc">
@@ -98,10 +82,7 @@ function CreditCardForm() {
                         type="password" 
                         name="cvv" 
                         placeholder='123'
-                        value={formData.cvv} 
-                        onChange={handleChange} 
                         maxLength="3"
-                        required
                     />
                
             </div>

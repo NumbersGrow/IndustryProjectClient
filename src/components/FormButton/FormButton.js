@@ -6,4 +6,4 @@ function FormButton({ value, className, type = 'button' }){
     );
 };
 
-export default FormButton
+export default FormButton;

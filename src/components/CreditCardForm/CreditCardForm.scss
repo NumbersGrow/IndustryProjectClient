@@ -14,7 +14,7 @@
         padding: 1rem;
         @include flex(center, center);
         &__card{
-        background-color: rgb(36, 12, 119);
+        background-image: url("../../assets/images/Free-Plastic-Credit-Debit-Card-Mockup-PSD-3\ 1.png");
         border-radius: 0.4rem;
         height: 10rem;
         width: 16rem;
@@ -44,15 +44,16 @@
             font-size: 600;
         }
       
-        &__number{
-             position: relative;
+        &__number {
+            position: relative;
             width: 100%;
-            &-master{
-            width: 4rem; 
-            position: absolute;
-            top: 3.125rem; 
-            right: 1.5rem; 
-            width: 4rem;
+            &-master {
+                width: 4rem; 
+                position: absolute;
+                top: 50%;                 
+                right: 1.5rem;
+                transform: translateY(-50%);
+                width: 4rem;
             }
         }
       
