@@ -8,6 +8,8 @@ import CashierPayPage from "./pages/CashierPayPage/CashierPayPage";
 import AccountPage from "./pages/AccountPage/AccountPage";
 import CustomerCartPage from './pages/CustomerCartPage/CustomerCartPage';
 
+import MapPage from './pages/MapPage/MapPage';
+
 function App() {
   return (
     <BrowserRouter>
@@ -17,7 +19,7 @@ function App() {
           <Route path="/cashier/cart" element={<CashierCartPage />} />
           <Route path="/cashier/pay" element={<CashierPayPage />} />
           {/* <Route path="/cashier/thank-you" element={<CashierCartPage />} /> */}
-          
+          <Route path="/map" element={<MapPage />} />
           <Route path="/customer" element={<AccountPage />} />
           <Route path="/customer/cart" element={<CustomerCartPage />} />
 
