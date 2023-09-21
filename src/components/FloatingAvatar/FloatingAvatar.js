@@ -3,7 +3,7 @@ import './FloatingAvatar.scss';
 import { ReactComponent as CartIcon } from '../../assets/icons/View Cart CTA.svg';
 
 function FloatingAvatar() {
-  const [position, setPosition] = useState({ top: 0, left: 0 });
+  const [position, setPosition] = useState({ top: 10, left: 350 });
   const [isDragging, setIsDragging] = useState(false);
 
   const startDrag = (event) => {
