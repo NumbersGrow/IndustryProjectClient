@@ -12,9 +12,7 @@ function MobileProductInCart({ name, category, imgSrc, price }) {
     const decrease = () => {
         setCounter(count => count - 1)
     };
-    const updatePrice = () =>{
-    };
-
+  
     return (
         <section className="mobile-cart-product">
             <img className="mobile-cart-product__pic" src={imgSrc} alt="placeholder image" />
