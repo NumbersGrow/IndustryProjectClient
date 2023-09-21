@@ -3,7 +3,7 @@ import { React, useState } from 'react'
 import mockData from '../../../assets/mockdata/mockdata';
 
 
-function MobileProductInCart() {
+function MobileProductInCart({ name, category, imgSrc, price }) {
     const [counter, setCounter] = useState(1);
 
     const increase = () =>{
@@ -17,12 +17,12 @@ function MobileProductInCart() {
 
     return (
         <section className="mobile-cart-product">
-            <img className="mobile-cart-product__pic" src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/3f/Placeholder_view_vector.svg/681px-Placeholder_view_vector.svg.png" alt="placeholder image" />
+            <img className="mobile-cart-product__pic" src={imgSrc} alt="placeholder image" />
             <div className="mobile-cart-product__info">
 
             <div className="mobile-cart-product__info-top">
-            <h3 className="mobile-cart-product__name">Product Name</h3>
-            <p className="mobile-cart-product__category">Category</p>
+            <h3 className="mobile-cart-product__name">{name}</h3>
+            <p className="mobile-cart-product__category">{category}</p>
      
                 
             </div>
@@ -32,7 +32,7 @@ function MobileProductInCart() {
                     <div className="mobile-cart-product__counter-quantity">{counter}</div>
                     <div className="mobile-cart-product__counter-increase" onClick={increase}>+</div>
                 </div>
-                <div className="mobile-cart-product__cost">$12.00</div> 
+                <div className="mobile-cart-product__cost">{price}</div> 
             </div>
               </div>
         </section>

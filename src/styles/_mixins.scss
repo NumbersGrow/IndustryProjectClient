@@ -18,3 +18,9 @@
   justify-content: $justify;
   align-items: $align;
 }
+@font-face {
+  font-family: 'lush';
+  src: url('../assets/fonts/LushHandwritten-Bold.woff') format(''woff'');
+  font-weight: bold;
+  font-style: normal;
+}

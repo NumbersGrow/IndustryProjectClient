@@ -1,5 +1,7 @@
 import './MobileCart.scss';
-
+import image1 from "../../../assets/images/punkin_pumpkin_bath_bomb_2023_724062ec_thumbnail_256.png";
+import image2 from "../../../assets/images/lord_of_misrule_bath_bomb_ecom_2023_3accf742_thumbnail_256.png";
+import image3 from "../../../assets/images/ghostie.avif";
 import MobileProductInCart from './MobileProductInCart';
 import PaymentButton from '../../../components/PaymentButton/PaymentButton';
 import {ReactComponent as ApplePayIcon} from "../../../assets/icons/apple-pay-logo-svgrepo-com.svg";
@@ -21,9 +23,9 @@ const handleNavigate = () =>{
             </div>
 
             <div className="mobile-cart__products">
-                <MobileProductInCart />
-                <MobileProductInCart />     
-                <MobileProductInCart />
+                <MobileProductInCart name="PUMKIN PUMPKIN" category="BATH BOMB" price="$8.00" imgSrc={image1}/>
+                <MobileProductInCart  name="ALIEN" category="BUBBLE BAR" price="$10.00" imgSrc={image2}/>     
+                <MobileProductInCart name="LORD OF MISRULE" category="BATH BOMB"price="$9.50" imgSrc={image3}/>
             </div>
             <div className="mobile-cart__summary">
                 <h3 className="mobile-cart__summary-title">Summary</h3>
