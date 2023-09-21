@@ -18,7 +18,7 @@ function CreditCardForm() {
     });
 
     const handleSubmit = () => {
-     navigate('/customer');
+     navigate('customer/thank-you');
     };
 
     return (
