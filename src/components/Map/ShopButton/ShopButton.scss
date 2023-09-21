@@ -1,0 +1,14 @@
+@use "../../../styles/variables" as *;
+@use "../../../styles/mixins" as *;
+
+.payment-button {
+    // @include flex(center, center);
+    border: 1px solid $border-dark;
+    background-color: $bg-primary-light;
+    color: $border-dark;
+    width: 7rem;
+    height:2.5rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+            border-radius: .2rem;
+}

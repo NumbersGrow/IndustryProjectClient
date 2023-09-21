@@ -7,7 +7,7 @@ import battery from "../../../assets/icons/_battery.svg";
 function TopHeader() {
   return (
     <main className="top-header">
-      <p>19:02</p>
+      <p className="top-header__time">19:02</p>
       <section className="top-header__images">
         <img src={connection} className="top-header__image" alt="connection" />
         <img src={wifi} className="top-header__image" alt="wifi" />
